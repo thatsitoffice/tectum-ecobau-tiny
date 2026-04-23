@@ -3,11 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const calendlyUrl =
   "https://calendly.com/henneberg-webdesign-info/tectum-ecobau-meeting";
+
+const brandNote = "Deutsch‑serbische Kooperation · Vorfertigung in Holz · Auslieferung DACH";
 ---
 
 <BaseLayout
-  title="Tectum Ecobau — Strukturleitfaden (Landingpage)"
-  description="Kurze, schlichte Landingpage als Strukturleitfaden für die neue Tectum‑Ecobau Website: Zielsetzung, Seitenstruktur, Optionen & Vorgehensweisen — inkl. Calendly."
+  title="Tectum Ecobau — Tiny Haus & Modulbau aus Holz"
+  description="Professionelle Homepage für Tectum Ecobau: Tiny Häuser & Holzmodule, klare Prozesse von Planung bis Montage, Lösungen für Ferienparks (Park Renewal), Kita‑Module und Wellness‑Boxen — inkl. Meeting via Calendly."
 >
   <header class="topbar">
     <div class="container topbar-inner">
@@ -15,14 +17,17 @@ const calendlyUrl =
         <span class="mark" aria-hidden="true"></span>
         <div>
           <strong>Tectum Ecobau</strong>
-          <div><span>Strukturleitfaden · Landingpage</span></div>
+          <div><span>{brandNote}</span></div>
         </div>
       </a>
       <nav class="nav" aria-label="Sektionen">
-        <a href="#zielsetzung">Zielsetzung</a>
-        <a href="#struktur">Struktur</a>
-        <a href="#optionen">Optionen</a>
-        <a class="cta" href="#meeting">Meeting planen</a>
+        <a href="#loesungen">Lösungen</a>
+        <a href="#prozess">Ablauf</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn primary" href="#kontakt">
+          Projekt anfragen <span class="arrow" aria-hidden="true"></span>
+        </a>
       </nav>
     </div>
   </header>
@@ -32,275 +37,433 @@ const calendlyUrl =
       <div class="container">
         <div class="kicker">
           <span class="dot" aria-hidden="true"></span>
-          Modern, klar, konvertierend — als Leitfaden für die neue Website‑Architektur
+          Moderne Tiny Häuser & Holzmodule — gebaut wie ein Produkt, geliefert wie ein Prozess
         </div>
         <h1>
-          Von „wir bauen mit Holz“ zu einer Website‑Struktur, die
-          <br />
-          <span style="color: var(--accent)">Produkte</span>,
-          <span style="color: var(--accent2)">Zielgruppen</span> und
-          <span style="opacity:.88">Entscheidungen</span> sauber trennt.
+          Premium‑Holzmodule,
+          <span style="color:var(--accent)">schnell montiert</span> —
+          <br />für Wohnen, Hospitality und soziale Infrastruktur.
         </h1>
         <p class="lead">
-          Diese Seite ist bewusst schlicht gehalten: Sie erklärt die Zielsetzung (ausgehend
-          von der alten Seite), zeigt eine neue Struktur als Navigations‑Logik und gibt einen
-          Überblick über mögliche Herangehensweisen für die unterschiedlichen Geschäftsmodelle
-          (Kita‑Module, Park Renewal, Wellness Box).
+          Tectum Ecobau verbindet Holzbau‑Qualität mit industrieller Vorfertigung. Das Ergebnis:
+          modulare Einheiten mit klar kalkulierbaren Zeitplänen — von der Konfiguration bis zur
+          Montage vor Ort. Ideal für Tiny Houses, Park‑Renewal‑Lodges, Kita‑Module und Wellness‑Boxen.
         </p>
 
-        <div class="hero-grid">
-          <div class="panel">
-            <div class="panel-inner">
-              <h3>Was diese Seite liefert</h3>
-              <ul class="list">
-                <li>
-                  <span class="badge a">Klarheit</span>
-                  <div>
-                    <div class="li-title">Zielbild & Messaging</div>
-                    <div class="li-desc">
-                      Nachhaltigkeit + Holzbau + Geschwindigkeit – aber je Segment anders erzählt.
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <span class="badge b">Struktur</span>
-                  <div>
-                    <div class="li-title">Seiten‑/Navigationslogik</div>
-                    <div class="li-desc">
-                      Ein Informations‑System: nicht „Menüpunkte“, sondern Entscheidungswege.
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <span class="badge c">Optionen</span>
-                  <div>
-                    <div class="li-title">Mögliche Vorgehensweisen</div>
-                    <div class="li-desc">
-                      Ein‑Marke vs. Sub‑Brand, „Produkt‑First“ vs. „Zielgruppen‑First“, Landingpage‑Cluster.
-                    </div>
-                  </div>
-                </li>
-              </ul>
+        <div class="hero-split">
+          <div class="stage">
+            <div class="stage-inner">
+              <h3>Warum Tectum</h3>
+              <p>
+                Wir bauen nicht „irgendwie modular“. Wir bauen so, dass Betreiber, Kommunen und
+                private Bauherren eine klare Entscheidung treffen können: definierte Varianten,
+                transparente Abläufe, belastbare Unterlagen.
+              </p>
+              <div class="metrics" aria-label="Highlights">
+                <div class="metric">
+                  <div class="num">Vorfertigung</div>
+                  <div class="lbl">schnelle Montage · wenig Downtime</div>
+                </div>
+                <div class="metric">
+                  <div class="num">Holzbau</div>
+                  <div class="lbl">Raumklima · Ästhetik · Nachhaltigkeit</div>
+                </div>
+                <div class="metric">
+                  <div class="num">DACH‑Fokus</div>
+                  <div class="lbl">Prozess + Unterlagen für Genehmigung & Betrieb</div>
+                </div>
+              </div>
+              <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+                <a class="btn primary" href="#kontakt">
+                  Projekt starten <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="btn ghost" href="#prozess">Ablauf ansehen</a>
+              </div>
+            </div>
+            <div class="stage-visual" aria-hidden="true">
+              <div class="gridlines"></div>
+              <div class="visual-caption">
+                <span class="chip"><span class="mini" aria-hidden="true"></span> <b>Design</b> · modern · warm</span>
+                <span class="chip"><b>System</b> · Varianten · Qualität</span>
+              </div>
             </div>
           </div>
 
-          <aside class="panel">
-            <div class="panel-inner">
-              <h3>Ausgangslage (komprimiert)</h3>
+          <aside class="stage">
+            <div class="stage-inner">
+              <h3>Schnelle Orientierung</h3>
               <p>
-                Die alte Seite kommuniziert den Kern („Wir bauen modern — mit Holz“), führt aber
-                nicht sauber durch unterschiedliche Entscheidungs‑Kontexte: Kommune/Träger (Kita),
-                Betreiber/Investoren (Park Renewal) und Premium‑Käufer bzw. B2B‑Hosts (Wellness).
+                Wähle den Einstieg, der zu deiner Entscheidung passt — wir führen dich über Nutzen,
+                Prozess und nächste Schritte.
               </p>
-              <div class="pill">
-                <b>Ergebnis</b>:
-                <span>Eine Struktur, die schnell zur passenden Lösung navigiert.</span>
+              <div style="margin-top:12px; display:grid; gap:10px">
+                <a class="btn" href="#loesungen">
+                  Lösungen entdecken <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="btn" href="#referenzen">
+                  Beispiele & Use‑Cases <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="btn" href="#kontakt">
+                  Angebot / Audit anfragen <span class="arrow" aria-hidden="true"></span>
+                </a>
+              </div>
+              <div style="margin-top:12px">
+                <span class="chip"><b>Hinweis</b>: diese Seite ist ein Design‑/Struktur‑Entwurf.</span>
               </div>
             </div>
           </aside>
         </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>tiny houses</span><span>holzmodule</span><span>park renewal</span><span>kita‑module</span><span>wellness box</span>
+            <span>serielle vorfertigung</span><span>prozess & montage</span><span>design & raumklima</span><span>tiny houses</span><span>holzmodule</span><span>park renewal</span><span>kita‑module</span><span>wellness box</span>
+            <span>serielle vorfertigung</span><span>prozess & montage</span><span>design & raumklima</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="zielsetzung" class="section">
+    <section id="loesungen" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Zielsetzung</h2>
+          <h2>Lösungen</h2>
           <p class="hint">
-            Ausgehend von `ecobau-tectum.de`: Fokus auf Holzbau, Nachhaltigkeit, Individualität —
-            nun übersetzt in ein System, das für jede Zielgruppe eine klare Story + Next Step hat.
+            Drei Produktwelten — jeweils mit eigener Story, aber gleicher Kern: Holzbauqualität,
+            Vorfertigung und ein sauberer Ablauf.
           </p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>1) Weniger „Alles auf einmal“</h3>
+            <span class="tag c">Living</span>
+            <h3>Tiny Houses & Modulwohnen</h3>
             <p>
-              Die Website soll nicht alles gleich stark erklären, sondern zuerst die Frage beantworten:
-              <em>„Welches Problem willst du lösen?“</em>
+              Für private Bauherren und Projektentwickler: modern, warm, langlebig — mit klarer
+              Planung und schneller Montage.
             </p>
             <ul>
-              <li>Kita‑Bedarf (Zeitdruck, Förderlogik, Genehmigung, Raumqualität)</li>
-              <li>Park Renewal (Rolling Swap, GEG/ESG‑Druck, ROI, minimale Downtime)</li>
-              <li>Wellness Box (Premium‑Mehrwert, ADR/Occupancy, Nebensaison‑Uplift)</li>
+              <li>Schlüsselfertige Varianten & Ausstattungs‑Pakete</li>
+              <li>Materialität, Raumklima und Designfokus</li>
+              <li>Konfiguration → Produktion → Montage</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>2) Schneller zur Entscheidung</h3>
+            <span class="tag a">Hospitality</span>
+            <h3>Park Renewal (Rolling Swap)</h3>
             <p>
-              Jede Hauptseite bekommt ein eindeutiges Ziel: Anfrage, Audit, Call, Download — mit
-              klarer Erwartung, was als Nächstes passiert.
+              Für Ferienpark‑Betreiber & Investoren: Austausch veralteter Einheiten im laufenden Betrieb
+              — minimaler Umsatzausfall, maximaler Uplift.
             </p>
-            <div class="pill">
-              <b>Prinzip</b>
-              <span>Pro Seite nur 1 primäres CTA‑Ziel.</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>3) Glaubwürdigkeit über Nachweise</h3>
-            <p>
-              Für B2G/B2B zählt: Prozesse, Standards, Förderlogik, Typen‑/Nachweismappen, harte
-              Zahlen (z.B. ADR‑Uplift, Auslastung, Amortisation).
-            </p>
-            <div class="pill">
-              <b>Deliverables</b>
-              <span>„Value Audit“, Case‑Cards, Unterlagen‑Checklisten.</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>4) Markentrennung wo nötig</h3>
-            <p>
-              Eine Premium‑Wellness‑Story funktioniert sprachlich anders als Kita‑Erweiterungen.
-              Wir halten den Kern (Holzbau, Vorfertigung, Qualität) — aber mit separater Tonalität.
-            </p>
-            <div class="pill">
-              <b>Option</b>
-              <span>Sub‑Brand (z.B. Tiny Times) für Park Renewal / Wellness.</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="struktur" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Neue Webseitenstruktur (Vorschlag)</h2>
-          <p class="hint">
-            Ein klarer „Wegweiser“: Einstieg über Problem/Zielgruppe, dann Produkt‑Cluster, dann
-            Nachweise & Kontakt.
-          </p>
-        </div>
-
-        <div class="structure" role="list">
-          <div class="row" role="listitem">
-            <div class="left">Start</div>
-            <div class="right">
-              Hero + 3 Wege: <code>Kita‑Module</code> · <code>Park Renewal</code> · <code>Wellness Box</code>.
-              Kurz: Was ist es? Für wen? Was ist der nächste Schritt?
-            </div>
-          </div>
-          <div class="row" role="listitem">
-            <div class="left">Lösungen</div>
-            <div class="right">
-              3 „Pillars“ als Landingpage‑Cluster. Jede Pillar‑Seite hat:
-              Nutzen, Prozess, Varianten, Anforderungen, Downloads/Checklisten, CTA.
-            </div>
-          </div>
-          <div class="row" role="listitem">
-            <div class="left">Prozess</div>
-            <div class="right">
-              Von „Erstgespräch“ → „Audit/Bedarf“ → „Konfiguration“ → „Genehmigung/Unterlagen“ →
-              „Produktion“ → „Montage“. Für B2G/B2B als Timeline + Verantwortlichkeiten.
-            </div>
-          </div>
-          <div class="row" role="listitem">
-            <div class="left">Nachweise</div>
-            <div class="right">
-              Unterlagen‑Mappe (Statik/Brandschutz/GEG/Schallschutz), Förderlogik, Referenzen,
-              Daten/ROI‑Beispiele.
-            </div>
-          </div>
-          <div class="row" role="listitem">
-            <div class="left">Über uns</div>
-            <div class="right">
-              „Deutsch‑serbische Kooperation“, Produktions‑Setup, Qualitätsverständnis, Materialität,
-              warum Holz, wie wir liefern.
-            </div>
-          </div>
-          <div class="row" role="listitem">
-            <div class="left">Kontakt</div>
-            <div class="right">
-              Zwei Schienen: <code>Meeting buchen</code> (Calendly) und <code>Anfrage</code> (Formular / Mail).
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="optionen" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Möglichkeiten & Herangehensweisen</h2>
-          <p class="hint">
-            Aus den hinterlegten Überlegungen: drei Geschäftsmodelle, drei Sales‑Realitäten.
-            Deshalb lohnt es sich, Struktur und Content‑Strategie bewusst zu wählen.
-          </p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>A) Zielgruppen‑First (B2G/B2B‑Conversion)</h3>
-            <p>Ideal, wenn Entscheidungswege und Unterlagen im Vordergrund stehen.</p>
             <ul>
-              <li><b>Kita</b>: Kommunen · freie Träger · Natur/Waldkita · Unternehmen</li>
-              <li><b>Park Renewal</b>: Betreiber · PE/Fonds · Asset Manager</li>
-              <li>Pro Zielgruppe: Pain → Lösung → Unterlagen → nächster Schritt</li>
+              <li>„Rolling Swap“: morgens raus, morgen rein — Downtime nahe null</li>
+              <li>Upgrade von ADR & Auslastung durch Premium‑Lodges</li>
+              <li>ESG/GEG‑Druck als Marktkatalysator</li>
             </ul>
-            <div class="pill">
-              <b>Best for</b>
-              <span>NRW/DACH Fokus, schnelle Referenzen, klare Pipeline.</span>
-            </div>
           </article>
 
           <article class="card">
-            <h3>B) Produkt‑First (Portfolio‑Klarheit)</h3>
-            <p>Ideal, wenn ihr das Produkt‑System als modulare Plattform zeigen wollt.</p>
+            <span class="tag b">Public</span>
+            <h3>Kita‑Module & Erweiterungen</h3>
+            <p>
+              Für Kommunen & Träger: Erweiterungs‑ und Naturkita‑Module mit Fokus auf Raumqualität,
+              minimaler Betriebsstörung und planbarem Zeitplan.
+            </p>
             <ul>
               <li>Kita‑Erweiterungsmodul (Inklusion/U3/Mehrzweck)</li>
               <li>Wald-/Naturkita‑Modul (winterfest, genehmigungsfähig)</li>
-              <li>PR‑30 / Park‑Renewal‑Lodges (Rolling Swap, EH55, ROI)</li>
-              <li>Wellness Box (Premium‑Upgrade, Nebensaison‑Hebel)</li>
+              <li>Förderlogik + Unterlagenpaket als Deal‑Beschleuniger</li>
             </ul>
           </article>
+        </div>
 
-          <article class="card">
-            <h3>C) Marke vs. Sub‑Brand</h3>
-            <p>Eine saubere Tonalitäts‑Trennung erhöht Conversion und schützt die Kernmarke.</p>
-            <ul>
-              <li><b>Tectum Ecobau</b>: Bau‑/Partner‑Marke, Vertrauen, Prozess, Qualität</li>
-              <li><b>Tiny Times</b>: Park Renewal & Wellness (Premium, ROI, „Unique stays“)</li>
-              <li>Gemeinsamer Kern: Holzbau, Vorfertigung, Qualität, schnelle Montage</li>
-            </ul>
-            <div class="pill">
-              <b>Trade‑off</b>
-              <span>Mehr Klarheit vs. mehr Pflegeaufwand (Content & SEO).</span>
+        <div class="two-col">
+          <div class="stage">
+            <div class="stage-inner">
+              <h3>Wellness Box (Premium‑Add‑On)</h3>
+              <p>
+                Für Hosts, Glamping & Private: modulare Spa‑Einheiten (Sauna/Kälte/Relax) als
+                sichtbarer Mehrwert — perfekt für Nebensaison und „Unique stays“.
+              </p>
+              <div class="pill"><b>Nutzen</b> · höhere ADR · bessere Auslastung · klare Positionierung</div>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="stage-inner">
+              <h3>Unterlagen & Sicherheit</h3>
+              <p>
+                Für B2G/B2B zählt weniger „schön“, mehr „prüfbar“: Nachweise, Checklisten, Prozess.
+                Wir liefern die Struktur, damit Entscheidungen schneller fallen.
+              </p>
+              <div class="pill"><b>Deliverables</b> · Unterlagen‑Mappe · Audit · klare Timeline</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prozess" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ablauf</h2>
+          <p class="hint">
+            Ein Prozess, der sich wie ein Produkt anfühlt: klar, wiederholbar, schnell — und trotzdem
+            flexibel genug für individuelle Projekte.
+          </p>
+        </div>
+
+        <div class="timeline" role="list">
+          <div class="step" role="listitem">
+            <div class="idx">01</div>
+            <div>
+              <div class="ttl">Kurz‑Check & Zielbild</div>
+              <div class="txt">
+                Was wird gebaut — und für wen? Wir klären Standort, Nutzung, Budget‑Rahmen,
+                Timeline und die passende Produktwelt.
+              </div>
+              <div class="meta">
+                <span class="pill">15–30 min Call</span>
+                <span class="pill">Use‑Case & Anforderungen</span>
+              </div>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="idx">02</div>
+            <div>
+              <div class="ttl">Konfiguration & Angebot</div>
+              <div class="txt">
+                Varianten wählen (Grundriss, Ausstattung, Technik), Schnittstellen klären (Fundament,
+                Anschlüsse), Kosten transparent machen.
+              </div>
+              <div class="meta">
+                <span class="pill">Fixe Pakete</span>
+                <span class="pill">Optionen & Upgrades</span>
+              </div>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="idx">03</div>
+            <div>
+              <div class="ttl">Unterlagen & Genehmigung</div>
+              <div class="txt">
+                Für Projekte mit Behörden/Trägern: Nachweise, Checklisten, Prozess‑Roadmap.
+                Ziel: Unsicherheit reduzieren — Entscheidungen beschleunigen.
+              </div>
+              <div class="meta">
+                <span class="pill">Nachweis‑Mappe</span>
+                <span class="pill">Timeline & Verantwortliche</span>
+              </div>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="idx">04</div>
+            <div>
+              <div class="ttl">Produktion</div>
+              <div class="txt">
+                Industrielle Vorfertigung im Werk — Qualität, Wiederholbarkeit und Tempo.
+              </div>
+              <div class="meta">
+                <span class="pill">Vorfertigung</span>
+                <span class="pill">Qualitäts‑Check</span>
+              </div>
+            </div>
+          </div>
+          <div class="step" role="listitem">
+            <div class="idx">05</div>
+            <div>
+              <div class="ttl">Logistik & Montage</div>
+              <div class="txt">
+                Lieferung, Kran, Anschluss — und die Einheit steht. Für Park Renewal: Rolling‑Swap
+                als „chirurgischer Austausch“ im laufenden Betrieb.
+              </div>
+              <div class="meta">
+                <span class="pill">Minimaler Stillstand</span>
+                <span class="pill">Ready for use</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn primary" href="#kontakt">Projekt anfragen <span class="arrow" aria-hidden="true"></span></a>
+          <a class="btn" href="#referenzen">Use‑Cases ansehen <span class="arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="referenzen" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Referenzen & typische Use‑Cases</h2>
+          <p class="hint">
+            Beispiele, wie die Module als „Business‑Upgrade“ funktionieren — und welche Ziele
+            sie typischerweise lösen (ADR‑Uplift, Erweiterung, Saisonverlängerung).
+          </p>
+        </div>
+
+        <div class="cases">
+          <article class="case">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="body">
+              <h3>Park Renewal · Premium Lodge Upgrade</h3>
+              <p>
+                Austausch alter Bestandsbauten durch energieeffiziente Holzmodule — im laufenden Betrieb,
+                mit Fokus auf ADR‑Uplift und Saisonverlängerung.
+              </p>
+              <div class="kv" aria-label="Kennzahlen">
+                <div class="k"><b>Hebel</b><span>Rolling Swap</span></div>
+                <div class="k"><b>Ziel</b><span>Mehrumsatz</span></div>
+                <div class="k"><b>Risiko</b><span>Downtime minimiert</span></div>
+              </div>
             </div>
           </article>
-
-          <article class="card">
-            <h3>D) Content‑Cluster (SEO & Authority)</h3>
-            <p>Ihr spielt eure Stärke aus: SEO/Content/Engineering.</p>
-            <ul>
-              <li>„Fördermittel‑Guide“ (Kita je Bundesland)</li>
-              <li>„Value Audit“ (Park Renewal: ADR, Auslastung, Rolling Swap)</li>
-              <li>„Compliance‑as‑a‑Service“ (Genehmigung/Normen, Checklisten)</li>
-            </ul>
+          <article class="case">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="body">
+              <h3>Kita · Erweiterungsmodul</h3>
+              <p>
+                Mehr Raum ohne monatelange Baustelle: Inklusion/U3/Mehrzweck — mit klarer Unterlagen‑Mappe
+                und planbarer Montage.
+              </p>
+              <div class="kv" aria-label="Kennzahlen">
+                <div class="k"><b>Hebel</b><span>Tempo & Fixpreis</span></div>
+                <div class="k"><b>Ziel</b><span>Plätze schaffen</span></div>
+                <div class="k"><b>Fokus</b><span>Raumqualität</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="case">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="body">
+              <h3>Tiny House · Wohnen im Holzmodul</h3>
+              <p>
+                Schlüsselfertig, modern, warm — klare Pakete, saubere Ausführung, schnelle Realisierung.
+              </p>
+              <div class="kv" aria-label="Kennzahlen">
+                <div class="k"><b>Stil</b><span>Modern & zeitlos</span></div>
+                <div class="k"><b>Komfort</b><span>Ganzjahres‑Nutzung</span></div>
+                <div class="k"><b>Lieferung</b><span>Planbar</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="case">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="body">
+              <h3>Wellness Box · Experience Upgrade</h3>
+              <p>
+                Sauna/Kälte/Relax als Upgrade für Glamping, Boutique‑Hosts und private Rückzugsorte —
+                ein klarer Differenzierer im Markt.
+              </p>
+              <div class="kv" aria-label="Kennzahlen">
+                <div class="k"><b>Hebel</b><span>Unique stays</span></div>
+                <div class="k"><b>Ziel</b><span>Nebensaison</span></div>
+                <div class="k"><b>Position</b><span>Premium</span></div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="meeting" class="section">
+    <section id="faq" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Meeting planen</h2>
+          <h2>FAQ</h2>
           <p class="hint">
-            Direkt Termin buchen (Calendly). Danach können wir den finalen Sitemap‑Entwurf und die
-            Content‑Pfeiler in 30–45 Minuten festziehen.
+            Die häufigsten Fragen — kurz beantwortet. (Details und projektspezifische Klärung im Call.)
           </p>
         </div>
 
-        <div class="embed" aria-label="Calendly Embed">
-          <iframe
-            title="Calendly — Tectum Ecobau Meeting"
-            src={`${calendlyUrl}?hide_gdpr_banner=1&background_color=070a0e&text_color=f3f5f7&primary_color=7cffb2`}
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="faq">
+          <details>
+            <summary>
+              <span class="q">Wie schnell kann ein Modul stehen?</span>
+              <span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="a">
+              Durch Vorfertigung ist die Montage vor Ort sehr kurz. Die genaue Timeline hängt von
+              Standort, Fundament/Anschlüssen und ggf. Genehmigung ab.
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span class="q">Gibt es standardisierte Varianten oder nur individuell?</span>
+              <span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="a">
+              Beides: standardisierte Basispakete (schnell & planbar) plus Upgrades (Ausstattung,
+              Technik, Wellness, Fassaden).
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span class="q">Wie funktioniert Park Renewal im laufenden Betrieb?</span>
+              <span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="a">
+              Rolling Swap: alte Einheit raus, neues Modul rein. Ziel ist minimale Downtime der Parzelle
+              und schnelle Wiedervermietbarkeit.
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span class="q">Unterstützt ihr bei Unterlagen/Genehmigung?</span>
+              <span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="a">
+              Für B2G/B2B liefern wir eine klare Roadmap (Checklisten, Verantwortlichkeiten) und
+              bündeln die projektbezogenen Nachweise — damit Unsicherheit nicht zum Deal‑Killer wird.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kontakt & nächster Schritt</h2>
+          <p class="hint">
+            Buche direkt ein Meeting oder schreib uns die Eckdaten (Standort, Use‑Case, Zeitplan).
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="stage">
+            <div class="stage-inner">
+              <h3>Direkt Meeting buchen</h3>
+              <p>
+                Am schnellsten: 15–30 Minuten. Danach bekommst du ein klares Next‑Step‑Dokument
+                (Varianten, Timeline, To‑Dos).
+              </p>
+              <div class="embed" aria-label="Calendly Embed">
+                <iframe
+                  title="Calendly — Tectum Ecobau Meeting"
+                  src={`${calendlyUrl}?hide_gdpr_banner=1&background_color=05070b&text_color=f5f7fa&primary_color=7cffb2`}
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage">
+            <div class="stage-inner">
+              <h3>Oder per Mail</h3>
+              <p>
+                Sende uns kurz die wichtigsten Infos — wir melden uns mit Rückfragen und einem
+                Vorschlag für das passende Setup.
+              </p>
+              <div style="margin-top:12px; display:grid; gap:10px">
+                <a class="btn primary" href="mailto:info@ecobau-tectum.de?subject=Projektanfrage%20Tectum%20Ecobau&body=Hallo%20Tectum%2C%0D%0A%0D%0AUse-Case%3A%20(Tiny%20House%20%2F%20Park%20Renewal%20%2F%20Kita%20%2F%20Wellness)%0D%0AStandort%3A%20%0D%0AZeitplan%3A%20%0D%0ABudget-Rahmen%3A%20%0D%0AAnmerkungen%3A%20%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe">
+                  info@ecobau-tectum.de <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="btn" href="#prozess">Ablauf ansehen <span class="arrow" aria-hidden="true"></span></a>
+                <span class="pill"><b>Tipp</b> · Bilder/Grundstücksplan helfen für die erste Einschätzung.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -310,10 +473,10 @@ const calendlyUrl =
     <div class="container">
       <div class="grid">
         <div>
-          <div><strong style="color:rgba(243,245,247,.86)">Tectum Ecobau</strong></div>
+          <div><strong style="color:rgba(245,247,250,.86)">Tectum Ecobau</strong></div>
           <div class="small">
-            Diese Landingpage dient als Strukturleitfaden. Inhalte sind bewusst komprimiert, um den
-            Aufbau der neuen Website zu definieren.
+            Homepage‑Entwurf im Stil moderner Referenzen (Awwwards‑Look). Nächster Schritt: echte
+            Projekte/Referenzen + Produktseiten als Cluster.
           </div>
         </div>
         <div class="small" style="text-align:right">
